@@ -32,9 +32,13 @@ class MyApp extends StatelessWidget {
                         stat: Stat(units: "km", value: 120.0, maxValue: 120.0)),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 80),
+                    // NOTE: This logo should eventually become the indicator compontent.
+                    // Turn and Hazard indicators will be the lower wing sections.
+                    // Entire logo dimly lights up when headlights are on.
+                    // Central crest will illuminate when the high beams are active.
+                    padding: const EdgeInsets.symmetric(horizontal: 60),
                     child: SizedBox(
-                      width: 450,
+                      width: 430,
                       child: ColorFiltered(
                         colorFilter: const ColorFilter.matrix([
                           -1, 0, 0, 0, 255, // Red
